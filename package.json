@@ -15,5 +15,23 @@
   "bugs": {
     "url": "https://github.com/camille500/Infomotion-in60seconds/issues"
   },
-  "homepage": "https://github.com/camille500/Infomotion-in60seconds#readme"
+  "homepage": "https://github.com/camille500/Infomotion-in60seconds#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.5.5",
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-open": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.0.0",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-uglify": "^2.0.0",
+    "path": "^0.12.7",
+    "pg": "^6.1.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
