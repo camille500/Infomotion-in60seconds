@@ -21,7 +21,6 @@ app.set('view engine', 'ejs');
 /* ROUTERS INLADEN
 ------------------------------------------------------- */
 
-
 /* ROUTERS INSTELLEN
 ------------------------------------------------------- */
 // Express looks for assets in public folder
