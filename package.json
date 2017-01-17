@@ -1,0 +1,19 @@
+{
+  "name": "duurzame-stemwijzer-in60seconds",
+  "version": "1.0.0",
+  "description": "Eindopdracht voor project Infomotion, HvA Amsterdam",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Camille500@github.com/camille500/Infomotion-in60seconds.git"
+  },
+  "author": "Camille Sébastien Niessen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/camille500/Infomotion-in60seconds/issues"
+  },
+  "homepage": "https://github.com/camille500/Infomotion-in60seconds#readme"
+}
