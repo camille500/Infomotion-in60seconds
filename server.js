@@ -20,11 +20,14 @@ app.set('view engine', 'ejs');
 
 /* ROUTERS INLADEN
 ------------------------------------------------------- */
+var startRouter = require('./routes/start');
 
 /* ROUTERS INSTELLEN
 ------------------------------------------------------- */
 // Express looks for assets in public folder
 app.use(express.static(__dirname + '/public'));
+
+app.use('/start', startRouter);
 
 app.get('/', function(req, res) {
     res.render('index');
