@@ -1,7 +1,6 @@
 /* MAIN SASS FILES
 ------------------------------------------------------- */
 .align_text {
-  padding: .75em 4em 0 1em;
   text-align: center; }
 
 /* FONTS
@@ -10,17 +9,17 @@
 ------------------------------------------------------- */
 .startpagina__logo {
   width: 45%;
-  margin: 3em 0 .5em 21%; }
+  margin: 3.5em 0 1.5em 27.5%; }
 
 .startpagina__titel {
   color: #27ae60;
   font-size: 2.3em;
-  margin-left: -1.2em;
   text-transform: uppercase;
   text-align: center; }
 
-.startpagina__subtitel {
-  font-size: 1em; }
+.startpagina__subtitle {
+  font-size: 1.15em;
+  padding: .75em 1.2em 0 1.2em; }
 
 .startpagina .container__main {
   background-color: #ecf0f1;
