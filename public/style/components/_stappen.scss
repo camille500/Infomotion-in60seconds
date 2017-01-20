@@ -1,0 +1,46 @@
+.stap-1 {
+    &__headerText {
+
+    }
+    &__subText {
+      font-size: 1.3em;
+      margin: 1.25em 0 3.5em 0;
+    }
+    &__icon {
+      width: 9em;
+      margin-top: 2em;
+      margin-bottom: 1em;
+    }
+    &__btn_green {
+        background-color: $bg_btn_default;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        padding: .75em 1em;
+        width: 90%;
+        font-size: $font-default_btn_size;
+        border-radius: 1.5em;
+        border: 2px solid white;
+
+        &:hover {
+          text-decoration: none;
+          color: $text_green;
+        }
+    }
+    &__btn_red {
+        background-color: $bg_red;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        padding: .75em 1em;
+        width: 90%;
+        font-size: $font-default_btn_size;
+        border-radius: 1.5em;
+        border: 2px solid white;
+
+        &:hover {
+          text-decoration: none;
+          color: $text_green;
+        }
+    }
+}

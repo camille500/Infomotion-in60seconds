@@ -18,10 +18,16 @@
     }
 }
 
-.stap1 {
+.stap-1 {
     .container {
+        &__header {
+          background-color: $bg_primary;
+          color: white;
+          text-align: center;
+          padding-bottom: 1em;
+        }
         &__main {
-          background-color: blue!important;
+          background-color: $bg_default;
           height: 670px;
           text-align: center;
         }

@@ -64,6 +64,43 @@
     text-decoration: none;
     color: white; }
 
+.stap-1__subText {
+  font-size: 1.3em;
+  margin: 1.25em 0 3.5em 0; }
+
+.stap-1__icon {
+  width: 9em;
+  margin-top: 2em;
+  margin-bottom: 1em; }
+
+.stap-1__btn_green {
+  background-color: #2ecc71;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: .75em 1em;
+  width: 90%;
+  font-size: 1.5em;
+  border-radius: 1.5em;
+  border: 2px solid white; }
+  .stap-1__btn_green:hover {
+    text-decoration: none;
+    color: #27ae60; }
+
+.stap-1__btn_red {
+  background-color: #e74c3c;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: .75em 1em;
+  width: 90%;
+  font-size: 1.5em;
+  border-radius: 1.5em;
+  border: 2px solid white; }
+  .stap-1__btn_red:hover {
+    text-decoration: none;
+    color: #27ae60; }
+
 .startpagina .container__main {
   background-color: #ecf0f1;
   height: 670px;
@@ -74,8 +111,14 @@
   height: 670px;
   text-align: center; }
 
-.stap1 .container__main {
-  background-color: blue !important;
+.stap-1 .container__header {
+  background-color: #8B60B4;
+  color: white;
+  text-align: center;
+  padding-bottom: 1em; }
+
+.stap-1 .container__main {
+  background-color: #ecf0f1;
   height: 670px;
   text-align: center; }
 
