@@ -13,4 +13,8 @@ router.get('/stap-1', function(req, res) {
   res.render('start/stap-1');
 });
 
+router.get('/stap-2', function(req, res) {
+  res.render('start/stap-2');
+});
+
 module.exports = router;

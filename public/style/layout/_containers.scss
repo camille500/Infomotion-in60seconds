@@ -31,5 +31,20 @@
           height: 670px;
           text-align: center;
         }
+    .row {
+      &__partijen {
+        margin-top: 0em;
+        }
+      }
+    }
+}
+
+.stap-2 {
+    .container {
+        &__main {
+          background-color: $bg_energie;
+          height: 670px;
+          text-align: center;
+        }
     }
 }

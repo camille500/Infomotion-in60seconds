@@ -1,3 +1,5 @@
+var voorkeursPartij;
+
 function setExample() {
   var exampleText = ['Per onderwerp krijgt u drie stellingen te zien. Per stelling kunt u vervolgens aangeven hoe belangrijk u die stelling vindt.',
                      'U kunt de volgorde van de stellingen achteraf nog aanpassen door ze te verschuiven in de lijst die verschijnt.'];
@@ -14,4 +16,15 @@ function setExample() {
     document.getElementById('example_btn').style.display = 'none';
     document.getElementById('example_btn_start').style.display = 'initial';
   }
+}
+
+function stapOneScreen() {
+  document.getElementById('stap-1a').style.display = 'none';
+  document.getElementById('stap-1b').style.display = 'block';
+}
+
+function setVoorkeurPartij(partij) {
+  voorkeursPartij = partij;
+  localStorage.setItem('voorkeursPartij', partij);
+  window.location = "/start/stap-2";
 }

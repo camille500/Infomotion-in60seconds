@@ -11,6 +11,10 @@
       margin-top: 2em;
       margin-bottom: 1em;
     }
+    &__partij_logo {
+      width: 95%;
+      text-align: center;
+    }
     &__btn_green {
         background-color: $bg_btn_default;
         color: white;
@@ -41,6 +45,55 @@
         &:hover {
           text-decoration: none;
           color: $text_green;
+        }
+    }
+    .partij_holder {
+      border: 1px grey solid;
+      padding: 1em;
+      min-height: 121px;
+      background-color: white;
+    }
+    .m-t-center {
+      margin-top: 1.25em;
+    }
+    #stap-1b {
+      display: none;
+      background-color: $bg_primary;
+      height: 700px;
+
+      h1 {
+        color: white;
+        margin-bottom: 1em;
+      }
+    }
+}
+
+.stap-2 {
+    &__smallTitle {
+      font-size: 2.25em;
+      margin-top: 1.5em;
+    }
+    &__bigTitle {
+      font-size: 3em;
+    }
+    &__icon {
+      width: 14em;
+      margin-top: 4em;
+    }
+    &__btn_energy {
+        background-color: $bg_primary;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        padding: .75em 1em;
+        width: 90%;
+        font-size: $font-default_btn_size;
+        border-radius: 1.5em;
+        border: 2px solid white;
+
+        &:hover {
+          text-decoration: none;
+          color: white;
         }
     }
 }

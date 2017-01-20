@@ -4,16 +4,74 @@
   <!-- <div class="container container__header">
     <h1 class="stap-1__headerText">Politieke voorkeur</h1>
   </div> -->
-  <div class="container container__main">
+  <div id="stap-1a" class="container container__main">
 
     <img class="stap-1__icon" src="../dist/images/icon_question_green.svg" alt="Icon van een vraagteken"/>
 
     <p class="stap-1__subText">Als je al een voorkeur hebt voor een politieke partij, klik dan op 'Ja, ik heb al een voorkeur'. Je krijgt dan na het invullen van de stemwijzer te zien hoe goed deze partij bij jou past.</p>
 
-    <a class="stap-1__btn_green" href="#" title="Ik heb een politieke voorkeur">Ja, ik heb al een voorkeur</a><br /><br /><br /><br />
-    <a class="stap-1__btn_red" href="#" title="Ik heb een politieke voorkeur">Nee, ik heb geen voorkeur</a>
+    <a class="stap-1__btn_green" href="#" onclick="stapOneScreen()" title="Ik heb een politieke voorkeur">Ja, ik heb al een voorkeur</a><br /><br /><br /><br />
+    <a class="stap-1__btn_red" href="/start/stap-2" title="Ik heb een politieke voorkeur">Nee, ik heb geen voorkeur</a>
 
   </div>
+
+  <div id="stap-1b" class="container container__main">
+    <h1>Jouw voorkeur</h1>
+    <div class="row row__partijen">
+      <div class="col-xs-4 partij_holder">
+        <a href="#" onclick="setVoorkeurPartij('50Plus')"><img class="stap-1__partij_logo" src="../dist/images/partijen/50plus.svg" alt="50Plus"/></a>
+      </div>
+      <div class="col-xs-4 partij_holder">
+        <a href="#" onclick="setVoorkeurPartij('CDA')"><img class="stap-1__partij_logo" src="../dist/images/partijen/CDA.jpg" alt="CDA"/></a>
+      </div>
+      <div class="col-xs-4 partij_holder">
+        <a href="#" onclick="setVoorkeurPartij('CU')"><img class="stap-1__partij_logo" src="../dist/images/partijen/cu.gif" alt="CU"/></a>
+      </div>
+    </div>
+    <div class="row row__partijen">
+      <div class="col-xs-4 partij_holder">
+        <a href="#" onclick="setVoorkeurPartij('D66')"><img class="stap-1__partij_logo m-t-center" src="../dist/images/partijen/d66.png" alt="D66"/></a>
+      </div>
+      <div class="col-xs-4 partij_holder">
+        <a href="#" onclick="setVoorkeurPartij('DENK')"><img class="stap-1__partij_logo m-t-center" src="../dist/images/partijen/denk.jpg" alt="DENK"/></a>
+      </div>
+      <div class="col-xs-4 partij_holder">
+        <a href="#" onclick="setVoorkeurPartij('GeenPeil')"><img class="stap-1__partij_logo m-t-center" src="../dist/images/partijen/geenpeil.png" alt="GeenPeil"/></a>
+      </div>
+    </div>
+    <div class="row row__partijen">
+      <div class="col-xs-4 partij_holder">
+        <a href="#" onclick="setVoorkeurPartij('Groenlinks')"><img class="stap-1__partij_logo" src="../dist/images/partijen/groenlinks.jpg" alt="Groenlinks"/></a>
+      </div>
+      <div class="col-xs-4 partij_holder">
+        <a href="#" onclick="setVoorkeurPartij('Piratenpartij')"><img class="stap-1__partij_logo m-t-center" src="../dist/images/partijen/piratenpartij.png" alt="Piratenpartij"/></a>
+      </div>
+      <div class="col-xs-4 partij_holder">
+        <a href="#" onclick="setVoorkeurPartij('PVDA')"><img class="stap-1__partij_logo m-t-center" src="../dist/images/partijen/pvda.jpg" alt="PVDA"/></a>
+      </div>
+    </div>
+    <div class="row row__partijen">
+      <div class="col-xs-4 partij_holder">
+        <a href="#" onclick="setVoorkeurPartij('PVV')"><img class="stap-1__partij_logo m-t-center" src="../dist/images/partijen/pvv.jpg" alt="PVV"/></a>
+      </div>
+      <div class="col-xs-4 partij_holder">
+        <a href="#" onclick="setVoorkeurPartij('SGP')"><img class="stap-1__partij_logo m-t-center" src="../dist/images/partijen/sgp.jpg" alt="SGP"/></a>
+      </div>
+      <div class="col-xs-4 partij_holder">
+        <a href="#" onclick="setVoorkeurPartij('SP')"><img class="stap-1__partij_logo m-t-center" src="../dist/images/partijen/sp.png" alt="SP"/></a>
+      </div>
+    </div>
+    <div class="row row__partijen">
+      <div class="col-xs-4 partij_holder">
+        <a href="#" onclick="setVoorkeurPartij('VNL')"><img class="stap-1__partij_logo" src="../dist/images/partijen/vnl.png" alt="VNL"/></a>
+      </div>
+      <div class="col-xs-4 partij_holder">
+        <a href="#" onclick="setVoorkeurPartij('VVD')"><img width="80" src="../dist/images/partijen/vvd.png" alt="VVD"/></a>
+      </div>
+    </div>
+  </div>
 </div>
+
+
 
 <%- include('../partials/main_footer.ejs') %>
