@@ -18,7 +18,7 @@
   color: white; }
 
 .uitleg__btn {
-  background-color: #ecf0f1;
+  background-color: #ffffff;
   color: #27ae60;
   text-align: center;
   text-decoration: none;
@@ -102,7 +102,7 @@
     color: #27ae60; }
 
 .startpagina .container__main {
-  background-color: #ecf0f1;
+  background-color: #ffffff;
   height: 670px;
   text-align: center; }
 
@@ -112,13 +112,13 @@
   text-align: center; }
 
 .stap-1 .container__header {
-  background-color: #8B60B4;
+  background-color: #27ae60;
   color: white;
   text-align: center;
   padding-bottom: 1em; }
 
 .stap-1 .container__main {
-  background-color: #ecf0f1;
+  background-color: #ffffff;
   height: 670px;
   text-align: center; }
 
