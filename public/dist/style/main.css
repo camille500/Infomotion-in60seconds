@@ -147,6 +147,11 @@
     text-decoration: none;
     color: white; }
 
+.stap-2 #stap-12b {
+  display: none;
+  background-color: #8B60B4;
+  height: 700px; }
+
 .startpagina .container__main {
   background-color: #ffffff;
   height: 670px;

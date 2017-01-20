@@ -23,6 +23,12 @@ function stapOneScreen() {
   document.getElementById('stap-1b').style.display = 'block';
 }
 
+function stapTwoScreen() {
+  document.getElementById('stap-2a').style.display = 'none';
+  document.getElementById('voorkeursPartij').innerHTML = localStorage.getItem('voorkeursPartij');
+  document.getElementById('stap-2b').style.display = 'block';
+}
+
 function setVoorkeurPartij(partij) {
   voorkeursPartij = partij;
   localStorage.setItem('voorkeursPartij', partij);
