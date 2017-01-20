@@ -5,9 +5,7 @@ function setExample() {
   var placeholderText = document.getElementById('uitleg_text');
   var placeholderImage = document.getElementById('uitleg_image');
 
-  console.log(placeholderImage.src);
-
-  if(placeholderImage.src === '/dist/images/scherm_example_1.svg') {
+  if(placeholderImage.src === 'https://in60seconds.herokuapp.com/dist/images/scherm_example_1.svg') {
     placeholderText.innerHTML = exampleText[0];
     placeholderImage.src = exampleImage[0];
   } else {
