@@ -7,9 +7,36 @@
 ------------------------------------------------------- */
 /* COLORS
 ------------------------------------------------------- */
+.uitleg__example_image {
+  width: 40%;
+  margin-top: 5em; }
+
+.uitleg__text {
+  font-size: 1.3em;
+  padding: 2.5em 1em 0 1em;
+  margin-bottom: 4em;
+  color: white; }
+
+.uitleg__btn {
+  background-color: #ecf0f1;
+  color: #27ae60;
+  text-align: center;
+  text-decoration: none;
+  padding: .75em 3.75em;
+  width: 90%;
+  font-size: 1.5em;
+  border-radius: 1.5em;
+  border: 2px solid white; }
+  .uitleg__btn:hover {
+    text-decoration: none;
+    color: #27ae60; }
+
+.uitleg #example_btn_start {
+  display: none; }
+
 .startpagina__logo {
   width: 45%;
-  margin: 3.5em 0 1.5em 27.5%; }
+  margin: 3.5em 0 1.5em 0; }
 
 .startpagina__titel {
   color: #27ae60;
@@ -18,11 +45,38 @@
   text-align: center; }
 
 .startpagina__subtitle {
-  font-size: 1.15em;
-  padding: .75em 1.2em 0 1.2em; }
+  font-size: 1.3em;
+  padding: 1.5em 1.1em 0 1.1em;
+  margin-bottom: 4em; }
+
+.startpagina__btn {
+  background-color: #2ecc71;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 1em 2.75em;
+  width: 90%;
+  font-size: 1.5em;
+  border-radius: 1.5em;
+  border: 2px solid white; }
+  .startpagina__btn:hover {
+    background-color: #27ae60;
+    text-decoration: none;
+    color: white; }
 
 .startpagina .container__main {
   background-color: #ecf0f1;
-  height: 670px; }
+  height: 670px;
+  text-align: center; }
+
+.uitleg .container__main {
+  background-color: #8B60B4;
+  height: 670px;
+  text-align: center; }
+
+.stap1 .container__main {
+  background-color: blue !important;
+  height: 670px;
+  text-align: center; }
 
 /*# sourceMappingURL=main.css.map */

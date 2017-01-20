@@ -3,6 +3,27 @@
         &__main {
             background-color: $bg_default;
             height: 670px;
+            text-align: center;
+        }
+    }
+}
+
+.uitleg {
+    .container {
+        &__main {
+          background-color: $bg_primary;
+          height: 670px;
+          text-align: center;
+        }
+    }
+}
+
+.stap1 {
+    .container {
+        &__main {
+          background-color: blue!important;
+          height: 670px;
+          text-align: center;
         }
     }
 }

@@ -1,7 +1,7 @@
 .startpagina {
     &__logo {
         width: 45%;
-        margin: 3.5em 0 1.5em 27.5%;
+        margin: 3.5em 0 1.5em 0;
     }
     &__titel {
         color: $text_green;
@@ -10,7 +10,25 @@
         text-align: center;
     }
     &__subtitle {
-        font-size: 1.15em;
-        padding: .75em 1.2em 0 1.2em;
+        font-size: 1.3em;
+        padding: 1.5em 1.1em 0 1.1em;
+        margin-bottom: 4em;
+    }
+    &__btn {
+        background-color: $bg_btn_default;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        padding: 1em 2.75em;
+        width: 90%;
+        font-size: $font-default_btn_size;
+        border-radius: 1.5em;
+        border: 2px solid white;
+
+        &:hover {
+          background-color: $bg_btn_default_hover;
+          text-decoration: none;
+          color: white;
+        }
     }
 }

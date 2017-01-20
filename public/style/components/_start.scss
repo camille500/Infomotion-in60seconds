@@ -1,0 +1,31 @@
+.uitleg {
+    &__example_image {
+        width: 40%;
+        margin-top: 5em;
+    }
+    &__text {
+        font-size: 1.3em;
+        padding: 2.5em 1em 0 1em;
+        margin-bottom: 4em;
+        color: white;
+    }
+    &__btn {
+        background-color: $bg_default;
+        color: $text_green;
+        text-align: center;
+        text-decoration: none;
+        padding: .75em 3.75em;
+        width: 90%;
+        font-size: $font-default_btn_size;
+        border-radius: 1.5em;
+        border: 2px solid white;
+
+        &:hover {
+          text-decoration: none;
+          color: $text_green;
+        }
+    }
+    #example_btn_start {
+      display: none;
+    }
+}
