@@ -5,7 +5,7 @@ function setExample() {
   var placeholderText = document.getElementById('uitleg_text');
   var placeholderImage = document.getElementById('uitleg_image');
 
-  if(placeholderImage.src === 'http://localhost:3000/dist/images/scherm_example_1.svg') {
+  if(placeholderImage.src === '/dist/images/scherm_example_1.svg') {
     placeholderText.innerHTML = exampleText[0];
     placeholderImage.src = exampleImage[0];
   } else {
