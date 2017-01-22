@@ -200,6 +200,90 @@
           content: counter(item) ".";
           margin-right: .5em; }
 
+.list__two {
+  counter-reset: item; }
+  .list__two .container__header {
+    background-color: #e74c3c;
+    color: white;
+    padding-bottom: 1em;
+    width: 100%;
+    text-align: center; }
+  .list__two .container__main {
+    text-align: center; }
+    .list__two .container__main .explanationText {
+      font-size: 1.2em;
+      margin-top: 1em; }
+    .list__two .container__main .list_btn_next {
+      background-color: #e74c3c;
+      color: white;
+      text-decoration: none;
+      padding: .75em 1em;
+      width: 90%;
+      font-size: 1.5em;
+      border-radius: 1.5em;
+      border: 2px solid white; }
+      .list__two .container__main .list_btn_next:hover {
+        text-decoration: none;
+        color: #27ae60; }
+    .list__two .container__main ol {
+      width: 100%;
+      padding-left: 0;
+      margin-top: 2em;
+      list-style: none; }
+      .list__two .container__main ol .list-item {
+        counter-increment: item;
+        text-align: left;
+        font-size: 1.5em;
+        font-weight: 800;
+        background-color: #f29f97;
+        padding: 1em;
+        margin-bottom: .5em; }
+        .list__two .container__main ol .list-item:before {
+          content: counter(item) ".";
+          margin-right: .5em; }
+
+.list__three {
+  counter-reset: item; }
+  .list__three .container__header {
+    background-color: #27ae60;
+    color: white;
+    padding-bottom: 1em;
+    width: 100%;
+    text-align: center; }
+  .list__three .container__main {
+    text-align: center; }
+    .list__three .container__main .explanationText {
+      font-size: 1.2em;
+      margin-top: 1em; }
+    .list__three .container__main .list_btn_next {
+      background-color: #27ae60;
+      color: white;
+      text-decoration: none;
+      padding: .75em 1em;
+      width: 90%;
+      font-size: 1.5em;
+      border-radius: 1.5em;
+      border: 2px solid white; }
+      .list__three .container__main .list_btn_next:hover {
+        text-decoration: none;
+        color: #27ae60; }
+    .list__three .container__main ol {
+      width: 100%;
+      padding-left: 0;
+      margin-top: 2em;
+      list-style: none; }
+      .list__three .container__main ol .list-item {
+        counter-increment: item;
+        text-align: left;
+        font-size: 1.5em;
+        font-weight: 800;
+        background-color: #60db94;
+        padding: 1em;
+        margin-bottom: .5em; }
+        .list__three .container__main ol .list-item:before {
+          content: counter(item) ".";
+          margin-right: .5em; }
+
 .startpagina .container__main {
   background-color: #ffffff;
   height: 670px;

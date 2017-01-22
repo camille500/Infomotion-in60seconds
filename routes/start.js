@@ -21,4 +21,13 @@ router.get('/list-1', function(req, res) {
   res.render('start/list-1');
 });
 
+router.get('/list-2', function(req, res) {
+  res.render('start/list-2');
+});
+
+router.get('/list-3', function(req, res) {
+  res.render('start/list-3');
+});
+
+
 module.exports = router;

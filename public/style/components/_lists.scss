@@ -54,3 +54,117 @@
     }
   }
 }
+
+.list__two {
+  counter-reset: item;
+  .container {
+    &__header {
+      background-color: $bg_red;
+      color: white;
+      padding-bottom: 1em;
+      width: 100%;
+      text-align: center;
+    }
+    &__main {
+      text-align: center;
+
+      .explanationText {
+        font-size: 1.2em;
+        margin-top: 1em;
+      }
+      .list_btn_next {
+        background-color: $bg_red;
+        color: white;
+        text-decoration: none;
+        padding: .75em 1em;
+        width: 90%;
+        font-size: $font-default_btn_size;
+        border-radius: 1.5em;
+        border: 2px solid white;
+
+        &:hover {
+          text-decoration: none;
+          color: $text_green;
+        }
+      }
+      ol {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 2em;
+        list-style: none;
+
+        .list-item {
+          counter-increment: item;
+          text-align: left;
+          font-size: 1.5em;
+          font-weight: 800;
+          background-color: lighten($bg_red, 20%);
+          padding: 1em;
+          margin-bottom: .5em;
+
+          &:before {
+            content: counter(item)".";
+            margin-right: .5em;
+          }
+        }
+      }
+    }
+  }
+}
+
+.list__three {
+  counter-reset: item;
+  .container {
+    &__header {
+      background-color: $text_green;
+      color: white;
+      padding-bottom: 1em;
+      width: 100%;
+      text-align: center;
+    }
+    &__main {
+      text-align: center;
+
+      .explanationText {
+        font-size: 1.2em;
+        margin-top: 1em;
+      }
+      .list_btn_next {
+        background-color: $text_green;
+        color: white;
+        text-decoration: none;
+        padding: .75em 1em;
+        width: 90%;
+        font-size: $font-default_btn_size;
+        border-radius: 1.5em;
+        border: 2px solid white;
+
+        &:hover {
+          text-decoration: none;
+          color: $text_green;
+        }
+      }
+      ol {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 2em;
+        list-style: none;
+
+        .list-item {
+          counter-increment: item;
+          text-align: left;
+          font-size: 1.5em;
+          font-weight: 800;
+          background-color: lighten($text_green, 20%);
+          padding: 1em;
+          margin-bottom: .5em;
+
+          &:before {
+            content: counter(item)".";
+            margin-right: .5em;
+          }
+        }
+      }
+    }
+  }
+}

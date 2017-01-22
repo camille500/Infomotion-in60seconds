@@ -235,7 +235,7 @@
 	};
 })(jQuery);
 
-var currentOrder = ["Minder belasting voor mensen die groen leven", "Beperken van CO2 uitstoot", "Meer windmolens", "Investeren in duurzame energie"];
+var currentOrder_energy = ['1.1', '1.2', '1.3', '1.4'];
 
 $(function() {
 	var $srcElement;
@@ -264,10 +264,86 @@ $(function() {
 		didDrop: function($src, $dst) {
 
 			if (srcIndex != dstIndex) {
-				var value = currentOrder[srcIndex];
-				currentOrder.splice(srcIndex, 1);
-				currentOrder.splice(dstIndex, 0, value);
-        localStorage.setItem('energie_stellingen', currentOrder);
+				var value = currentOrder_energy[srcIndex];
+				currentOrder_energy.splice(srcIndex, 1);
+				currentOrder_energy.splice(dstIndex, 0, value);
+        localStorage.setItem('energie_stellingen', currentOrder_energy);
+			}
+		}
+	});
+});
+
+var currentOrder_transport = ['2.1', '2.2', '2.3', '2.4'];
+
+$(function() {
+	var $srcElement;
+	var srcIndex, dstIndex;
+
+	$("#transport_items>li").dragdrop({
+		makeClone: true,
+		sourceHide: true,
+		dragClass: "shadow",
+		canDrag: function($src, event) {
+			$srcElement = $src;
+			srcIndex = $srcElement.index();
+			dstIndex = srcIndex;
+			return $src;
+		},
+		canDrop: function($dst) {
+			if ($dst.is("li")) {
+				dstIndex = $dst.index();
+				if (srcIndex < dstIndex)
+					$srcElement.insertAfter($dst);
+				else
+					$srcElement.insertBefore($dst);
+			}
+			return true;
+		},
+		didDrop: function($src, $dst) {
+
+			if (srcIndex != dstIndex) {
+				var value = currentOrder_transport[srcIndex];
+				currentOrder_transport.splice(srcIndex, 1);
+				currentOrder_transport.splice(dstIndex, 0, value);
+        localStorage.setItem('transport_stellingen', currentOrder_transport);
+			}
+		}
+	});
+});
+
+var currentOrder_nature = ['3.1', '3.2', '3.3', '3.4'];
+
+$(function() {
+	var $srcElement;
+	var srcIndex, dstIndex;
+
+	$("#nature_items>li").dragdrop({
+		makeClone: true,
+		sourceHide: true,
+		dragClass: "shadow",
+		canDrag: function($src, event) {
+			$srcElement = $src;
+			srcIndex = $srcElement.index();
+			dstIndex = srcIndex;
+			return $src;
+		},
+		canDrop: function($dst) {
+			if ($dst.is("li")) {
+				dstIndex = $dst.index();
+				if (srcIndex < dstIndex)
+					$srcElement.insertAfter($dst);
+				else
+					$srcElement.insertBefore($dst);
+			}
+			return true;
+		},
+		didDrop: function($src, $dst) {
+
+			if (srcIndex != dstIndex) {
+				var value = currentOrder_nature[srcIndex];
+				currentOrder_nature.splice(srcIndex, 1);
+				currentOrder_nature.splice(dstIndex, 0, value);
+        localStorage.setItem('natuur_stellingen', currentOrder_nature);
 			}
 		}
 	});
