@@ -120,7 +120,7 @@
   height: 700px; }
   .stap-1 #stap-1b h1 {
     color: white;
-    margin-bottom: 1em; }
+    margin-bottom: .55em; }
 
 .stap-2__smallTitle {
   color: white;
@@ -158,21 +158,47 @@
   background-color: #8B60B4;
   height: 700px; }
 
-.list__one .container__header {
-  background-color: #3498db;
-  padding-bottom: 1em;
-  width: 100%;
-  text-align: center; }
-
-.list__one .container__main ol {
-  width: 100%;
-  padding-left: 0;
-  margin-top: 2em; }
-  .list__one .container__main ol .list-item {
+.list__one {
+  counter-reset: item; }
+  .list__one .container__header {
     background-color: #3498db;
-    padding: 1em;
-    margin-bottom: .5em;
-    list-style: none; }
+    color: white;
+    padding-bottom: 1em;
+    width: 100%;
+    text-align: center; }
+  .list__one .container__main {
+    text-align: center; }
+    .list__one .container__main .explanationText {
+      font-size: 1.2em;
+      margin-top: 1em; }
+    .list__one .container__main .list_btn_next {
+      background-color: #3498db;
+      color: white;
+      text-decoration: none;
+      padding: .75em 1em;
+      width: 90%;
+      font-size: 1.5em;
+      border-radius: 1.5em;
+      border: 2px solid white; }
+      .list__one .container__main .list_btn_next:hover {
+        text-decoration: none;
+        color: #27ae60; }
+    .list__one .container__main ol {
+      width: 100%;
+      padding-left: 0;
+      margin-top: 2em;
+      list-style: none; }
+      .list__one .container__main ol .list-item {
+        counter-increment: item;
+        text-align: left;
+        font-size: 1.5em;
+        font-weight: 800;
+        background-color: #8bc4ea;
+        padding: 1em;
+        margin-bottom: .5em; }
+        .list__one .container__main ol .list-item:before {
+          content: counter(item) ".";
+          margin-right: .5em; }
 
 .startpagina .container__main {
   background-color: #ffffff;
