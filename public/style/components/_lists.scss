@@ -1,10 +1,24 @@
-.list {
+.list__one {
   .container {
     &__header {
       background-color: $bg_energie;
       padding-bottom: 1em;
       width: 100%;
       text-align: center;
+    }
+    &__main {
+      ol {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 2em;
+
+        .list-item {
+          background-color: $bg_energie;
+          padding: 1em;
+          margin-bottom: .5em;
+          list-style: none;
+        }
+      }
     }
   }
 }
