@@ -21,6 +21,7 @@ app.set('view engine', 'ejs');
 /* ROUTERS INLADEN
 ------------------------------------------------------- */
 var startRouter = require('./routes/start');
+var resultRouter = require('./routes/result');
 
 /* ROUTERS INSTELLEN
 ------------------------------------------------------- */
@@ -28,6 +29,7 @@ var startRouter = require('./routes/start');
 app.use(express.static(__dirname + '/public'));
 
 app.use('/start', startRouter);
+app.use('/result', resultRouter);
 
 app.get('/', function(req, res) {
     res.render('index');

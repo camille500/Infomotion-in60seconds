@@ -69,7 +69,41 @@ function getScore() {
       if(JSON.stringify(partijenData[i][3][2]) == JSON.stringify(userData[3][0][2])) {
         partijenScore[i] += 25;
       }
+      if(JSON.stringify(partijenData[i][3][3]) == JSON.stringify(userData[3][0][3])) {
+        partijenScore[i] += 25;
+      }
     }
   });
-  alert(partijenScore);
+  var numberOne = indexOfMax(partijenScore);
+   function indexOfMax(partijenScore) {
+    if (partijenScore.length === 0) {
+        return -1;
+    }
+
+    var max = partijenScore[0];
+    var maxIndex = 0;
+
+    for (var i = 1; i < partijenScore.length; i++) {
+        if (partijenScore[i] > max) {
+            maxIndex = i;
+            max = partijenScore[i];
+        }
+    }
+
+    return maxIndex;
 }
+
+console.log(partijenLijst[numberOne]);
+localStorage.setItem('partij1', partijenLijst[numberOne]);
+window.location = ('/result/');
+}
+
+var voorkeurText = document.getElementById('voorkeurText');
+var partij1Text = document.getElementById('partij1Text');
+
+if(voorkeurText && partij1Text) {
+  voorkeurText.innerHTML = localStorage.getItem('voorkeursPartij');
+  partij1Text.innerHTML = localStorage.getItem('partij1');
+}
+
+//getScore();
