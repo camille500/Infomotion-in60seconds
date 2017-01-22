@@ -1,3 +1,78 @@
+var vijftigplus = [['1.2', '1.3', '1.4', '1.1'],
+                  ['2.1','2.3','2.2','2.4'],
+                  ['3.3','3.4','3.1','3.2'],
+                  ['1','2','3']];
+
+var cda = [['1.3', '1.1', '1.4', '1.2'],
+          ['2.3','2.2','2.1','2.4'],
+          ['3.3','3.4','3.2','3.1'],
+          ['1','2','3']];
+
+var cu = [['1.4', '1.3', '1.2', '1.1'],
+         ['2.3','2.2','2.1','2.4'],
+         ['3.3','3.4','3.1','3.2'],
+         ['2','3','1']];
+
+var d66 = [['1.3', '1.2', '1.4', '1.1'],
+          ['2.3','2.2','2.1','2.4'],
+          ['3.3','3.4','3.2','3.1'],
+          ['1','2','3']];
+
+var denk = [['1.3', '1.2', '1.4', '1.1'],
+           ['2.4','2.3','2.1','2.2'],
+           ['3.1','3.3','3.2','3.4'],
+           ['1','2','3']];
+
+var geenpeil = [['1.1', '1.2', '1.3', '1.4'],
+               ['2.1','2.2','2.3','2.4'],
+               ['3.1','3.2','3.3','3.4'],
+               ['3','2','1']];
+
+var groenlinks = [['1.4', '1.2', '1.3', '1.1'],
+                 ['2.3','2.2','2.1','2.4'],
+                 ['3.2','3.4','3.3','3.1'],
+                 ['1','2','3']];
+
+var piratenpartij = [['1.4', '1.3', '1.2', '1.1'],
+                    ['2.4','2.3','2.1','2.2'],
+                    ['3.2','3.4','3.1','3.3'],
+                    ['1','2','3']];
+
+var pvda = [['1.4', '1.1', '1.3', '1.2'],
+           ['2.3','2.4','2.1','2.2'],
+           ['3.3','3.4','3.2','3.1'],
+           ['2','3','1']];
+
+var pvdd = [['1.1', '1.3', '1.4', '1.2'],
+           ['2.4','2.3','2.1','2.2'],
+           ['3.2','3.4','3.1','3.3'],
+           ['3','1','2']];
+
+var pvv = [['1.4', '1.3', '1.2', '1.1'],
+          ['2.2','2.1','2.4','2.3'],
+          ['3.1','3.4','3.3','3.2'],
+          ['3','1','2']];
+
+var sgp = [['1.2', '1.4', '1.3', '1.1'],
+          ['2.3','2.4','2.2','2.1'],
+          ['3.4','3.3','3.1','3.2'],
+          ['1','3','2']];
+
+var sp = [['1.3', '1.1', '1.4', '1.2'],
+         ['2.4','2.1','2.2','2.3'],
+         ['3.4','3.3','3.1','3.2'],
+         ['1','3','2']];
+
+var vnl = [['1.2', '1.3', '1.4', '1.1'],
+          ['2.2','2.1','2.4','2.3'],
+          ['3.4','3.1','3.3','3.2'],
+          ['2','3','1']];
+
+var vvd = [['1.4', '1.2', '1.3', '1.1'],
+          ['2.1','2.3','2.2','2.4'],
+          ['3.3','3.1','3.2','3.4'],
+          ['1','2','3']];
+
 (function($) {
 	var defaultOptions = {
 		makeClone: false, // Drag a clone of the source, and not the actual source element
@@ -349,10 +424,86 @@ $(function() {
 	});
 });
 
-var subjects;
-var subject_1;
-var subject_2;
-var subject_3;
+var userData = [[localStorage.getItem('energie_stellingen').split(',')],
+               [localStorage.getItem('transport_stellingen').split(',')],
+               [localStorage.getItem('natuur_stellingen').split(',')],
+               ['1','2','3']];
+
+var partijenLijst = ['50Plus', 'CDA', 'CU', 'D66', 'DENK', 'GeenPeil', 'Groenlinks', 'Piratenpartij', 'PvdA', 'PvDD', 'PVV', 'SGP', 'SP', 'VNL', 'VVD'];
+var partijenData = [vijftigplus, cda, cu, d66, denk, geenpeil, groenlinks, piratenpartij, pvda, pvdd, pvv, sgp, sp, vnl, vvd];
+var partijenScore = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+
+function getScore() {
+  partijenData.forEach(function(d,i) {
+    if(JSON.stringify(partijenData[i][0]) == JSON.stringify(userData[0][0])) {
+      partijenScore[i] += 100;
+    } else {
+      if(JSON.stringify(partijenData[i][0][0]) == JSON.stringify(userData[0][0][0])) {
+        partijenScore[i] += 25;
+      }
+      if(JSON.stringify(partijenData[i][0][1]) == JSON.stringify(userData[0][0][1])) {
+        partijenScore[i] += 25;
+      }
+      if(JSON.stringify(partijenData[i][0][2]) == JSON.stringify(userData[0][0][2])) {
+        partijenScore[i] += 25;
+      }
+      if(JSON.stringify(partijenData[i][0][3]) == JSON.stringify(userData[0][0][3])) {
+        partijenScore[i] += 25;
+      }
+    }
+    if(JSON.stringify(partijenData[i][1]) == JSON.stringify(userData[1][0])) {
+      partijenScore[i] += 100;
+    } else {
+      if(JSON.stringify(partijenData[i][1][0]) == JSON.stringify(userData[1][0][0])) {
+        partijenScore[i] += 25;
+      }
+      if(JSON.stringify(partijenData[i][1][1]) == JSON.stringify(userData[1][0][1])) {
+        partijenScore[i] += 25;
+      }
+      if(JSON.stringify(partijenData[i][1][2]) == JSON.stringify(userData[1][0][2])) {
+        partijenScore[i] += 25;
+      }
+      if(JSON.stringify(partijenData[i][1][3]) == JSON.stringify(userData[1][0][3])) {
+        partijenScore[i] += 25;
+      }
+    }
+    if(JSON.stringify(partijenData[i][2]) == JSON.stringify(userData[2][0])) {
+      partijenScore[i] += 100;
+    } else {
+      if(JSON.stringify(partijenData[i][2][0]) == JSON.stringify(userData[2][0][0])) {
+        partijenScore[i] += 25;
+      }
+      if(JSON.stringify(partijenData[i][2][1]) == JSON.stringify(userData[2][0][1])) {
+        partijenScore[i] += 25;
+      }
+      if(JSON.stringify(partijenData[i][2][2]) == JSON.stringify(userData[2][0][2])) {
+        partijenScore[i] += 25;
+      }
+      if(JSON.stringify(partijenData[i][2][3]) == JSON.stringify(userData[2][0][3])) {
+        partijenScore[i] += 25;
+      }
+    }
+    if(JSON.stringify(partijenData[i][3]) == JSON.stringify(userData[3][0])) {
+      partijenScore[i] += 100;
+    } else {
+      if(JSON.stringify(partijenData[i][3][0]) == JSON.stringify(userData[3][0][0])) {
+        partijenScore[i] += 25;
+      }
+      if(JSON.stringify(partijenData[i][3][1]) == JSON.stringify(userData[3][0][1])) {
+        partijenScore[i] += 25;
+      }
+      if(JSON.stringify(partijenData[i][3][2]) == JSON.stringify(userData[3][0][2])) {
+        partijenScore[i] += 25;
+      }
+      if(JSON.stringify(partijenData[i][3][3]) == JSON.stringify(userData[3][0][3])) {
+        partijenScore[i] += 25;
+      }
+    }
+  });
+}
+
+
+ 
 
 var voorkeursPartij;
 
