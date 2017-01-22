@@ -1,6 +1,6 @@
 {
   "name": "duurzame-stemwijzer-in60seconds",
-  "version": "1.0.1",
+  "version": "1.0.25",
   "description": "Eindopdracht voor project Infomotion, HvA Amsterdam",
   "main": "server.js",
   "scripts": {

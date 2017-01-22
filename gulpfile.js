@@ -11,6 +11,11 @@ const maps = require('gulp-sourcemaps');  // Create sourcemaps to map the origin
 const connect = require('gulp-connect');
 const open = require('gulp-open');
 
+/* NOG INSTELLEN
+------------------------------------------------------- */
+var browserSync = require("browser-sync");
+var reload = browserSync.reload;
+
 /* CONCAT ALL JS FILES
 ------------------------------------------------------- */
 gulp.task('concatJS', function(){
