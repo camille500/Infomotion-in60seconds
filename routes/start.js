@@ -17,4 +17,8 @@ router.get('/stap-2', function(req, res) {
   res.render('start/stap-2');
 });
 
+router.get('/list-1', function(req, res) {
+  res.render('start/list-1');
+});
+
 module.exports = router;

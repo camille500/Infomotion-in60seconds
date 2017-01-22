@@ -1,0 +1,10 @@
+.list {
+  .container {
+    &__header {
+      background-color: $bg_energie;
+      padding-bottom: 1em;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

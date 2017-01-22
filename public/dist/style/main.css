@@ -129,6 +129,10 @@
 .stap-2__bigTitle {
   font-size: 3em; }
 
+.stap-2__tempText {
+  margin: 2em 0;
+  color: white; }
+
 .stap-2__icon {
   width: 14em;
   margin-top: 4em; }
@@ -151,6 +155,12 @@
   display: none;
   background-color: #8B60B4;
   height: 700px; }
+
+.list .container__header {
+  background-color: #f1c40f;
+  padding-bottom: 1em;
+  width: 100%;
+  text-align: center; }
 
 .startpagina .container__main {
   background-color: #ffffff;
@@ -180,5 +190,21 @@
   background-color: #f1c40f;
   height: 670px;
   text-align: center; }
+
+body.dragging, body.dragging * {
+  cursor: move !important; }
+
+.dragged {
+  position: absolute;
+  opacity: 0.5;
+  z-index: 2000; }
+
+ol.example li.placeholder {
+  position: relative;
+  /** More li styles **/ }
+
+ol.example li.placeholder:before {
+  position: absolute;
+  /** Define arrowhead **/ }
 
 /*# sourceMappingURL=main.css.map */

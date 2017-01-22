@@ -29,7 +29,8 @@
     "gulp-sourcemaps": "^1.9.1",
     "gulp-uglify": "^2.0.0",
     "path": "^0.12.7",
-    "pg": "^6.1.2"
+    "pg": "^6.1.2",
+    "sortablejs": "^1.5.0-rc1"
   },
   "devDependencies": {
     "gulp": "^3.9.1"
