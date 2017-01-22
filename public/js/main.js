@@ -29,6 +29,11 @@ function stapTwoScreen() {
   document.getElementById('stap-2b').style.display = 'block';
 }
 
+function stapThreeScreen() {
+  document.getElementById('transport_introductie').style.display = 'none';
+  document.getElementById('list_two').style.display = 'block';
+}
+
 function setVoorkeurPartij(partij) {
   voorkeursPartij = partij;
   localStorage.setItem('voorkeursPartij', partij);

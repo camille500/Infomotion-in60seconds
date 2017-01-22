@@ -1,170 +1,224 @@
 .list__one {
-  counter-reset: item;
-  .container {
-    &__header {
-      background-color: $bg_energie;
-      color: white;
-      padding-bottom: 1em;
-      width: 100%;
-      text-align: center;
-    }
-    &__main {
-      text-align: center;
+    counter-reset: item;
 
-      .explanationText {
-        font-size: 1.2em;
-        margin-top: 1em;
-      }
-      .list_btn_next {
-        background-color: $bg_energie;
+    .container {
+        &__header {
+            background-color: $bg_energie;
+            color: white;
+            padding-bottom: 1em;
+            width: 100%;
+            text-align: center;
+        }
+
+        &__main {
+            text-align: center;
+
+            .explanationText {
+                font-size: 1.2em;
+                margin-top: 1em;
+            }
+
+            .list_btn_next {
+                background-color: $bg_energie;
+                color: white;
+                text-decoration: none;
+                padding: 0.75em 1em;
+                width: 90%;
+                font-size: $font-default_btn_size;
+                border-radius: 1.5em;
+                border: 2px solid white;
+
+                &:hover {
+                    text-decoration: none;
+                    color: $text_green;
+                }
+            }
+
+            ol {
+                width: 100%;
+                padding-left: 0;
+                margin-top: 2em;
+                list-style: none;
+
+                .list-item {
+                    counter-increment: item;
+                    text-align: left;
+                    font-size: 1.5em;
+                    font-weight: 800;
+                    background-color: lighten($bg_energie, 20%);
+                    padding: 1em;
+                    margin-bottom: 0.5em;
+
+                    &:before {
+                        content: counter(item)".";
+                        margin-right: 0.5em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.transport_intro {
+    background-color: $bg_red;
+    text-align: center;
+    height: 670px;
+    padding-top: 2.5em;
+
+    .smallTitle {
         color: white;
+        font-size: 2.25em;
+        margin-top: 0;
+    }
+
+    .bigTitle {
+        font-size: 3em;
+        color: white;
+        margin-top: 0;
+    }
+
+    .transportIcon {
+        width: 12em;
+        margin-top: 3.5em;
+    }
+
+    .btn_transport {
+        background-color: #ecf0f1;
+        color: black;
+        text-align: center;
         text-decoration: none;
-        padding: .75em 1em;
+        padding: 0.75em 1em;
         width: 90%;
         font-size: $font-default_btn_size;
         border-radius: 1.5em;
         border: 2px solid white;
 
         &:hover {
-          text-decoration: none;
-          color: $text_green;
+            text-decoration: none;
+            color: white;
         }
-      }
-      ol {
-        width: 100%;
-        padding-left: 0;
-        margin-top: 2em;
-        list-style: none;
-
-        .list-item {
-          counter-increment: item;
-          text-align: left;
-          font-size: 1.5em;
-          font-weight: 800;
-          background-color: lighten($bg_energie, 20%);
-          padding: 1em;
-          margin-bottom: .5em;
-
-          &:before {
-            content: counter(item)".";
-            margin-right: .5em;
-          }
-        }
-      }
     }
-  }
 }
 
 .list__two {
-  counter-reset: item;
-  .container {
-    &__header {
-      background-color: $bg_red;
-      color: white;
-      padding-bottom: 1em;
-      width: 100%;
-      text-align: center;
-    }
-    &__main {
-      text-align: center;
+    display: none;
+    counter-reset: item;
 
-      .explanationText {
-        font-size: 1.2em;
-        margin-top: 1em;
-      }
-      .list_btn_next {
-        background-color: $bg_red;
-        color: white;
-        text-decoration: none;
-        padding: .75em 1em;
-        width: 90%;
-        font-size: $font-default_btn_size;
-        border-radius: 1.5em;
-        border: 2px solid white;
-
-        &:hover {
-          text-decoration: none;
-          color: $text_green;
+    .container {
+        &__header {
+            background-color: $bg_red;
+            color: white;
+            padding-bottom: 1em;
+            width: 100%;
+            text-align: center;
         }
-      }
-      ol {
-        width: 100%;
-        padding-left: 0;
-        margin-top: 2em;
-        list-style: none;
 
-        .list-item {
-          counter-increment: item;
-          text-align: left;
-          font-size: 1.5em;
-          font-weight: 800;
-          background-color: lighten($bg_red, 20%);
-          padding: 1em;
-          margin-bottom: .5em;
+        &__main {
+            text-align: center;
 
-          &:before {
-            content: counter(item)".";
-            margin-right: .5em;
-          }
+            .explanationText {
+                font-size: 1.2em;
+                margin-top: 1em;
+            }
+
+            .list_btn_next {
+                background-color: $bg_red;
+                color: white;
+                text-decoration: none;
+                padding: 0.75em 1em;
+                width: 90%;
+                font-size: $font-default_btn_size;
+                border-radius: 1.5em;
+                border: 2px solid white;
+
+                &:hover {
+                    text-decoration: none;
+                    color: $text_green;
+                }
+            }
+
+            ol {
+                width: 100%;
+                padding-left: 0;
+                margin-top: 2em;
+                list-style: none;
+
+                .list-item {
+                    counter-increment: item;
+                    text-align: left;
+                    font-size: 1.5em;
+                    font-weight: 800;
+                    background-color: lighten($bg_red, 20%);
+                    padding: 1em;
+                    margin-bottom: 0.5em;
+
+                    &:before {
+                        content: counter(item)".";
+                        margin-right: 0.5em;
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }
 
 .list__three {
-  counter-reset: item;
-  .container {
-    &__header {
-      background-color: $text_green;
-      color: white;
-      padding-bottom: 1em;
-      width: 100%;
-      text-align: center;
-    }
-    &__main {
-      text-align: center;
+    counter-reset: item;
 
-      .explanationText {
-        font-size: 1.2em;
-        margin-top: 1em;
-      }
-      .list_btn_next {
-        background-color: $text_green;
-        color: white;
-        text-decoration: none;
-        padding: .75em 1em;
-        width: 90%;
-        font-size: $font-default_btn_size;
-        border-radius: 1.5em;
-        border: 2px solid white;
-
-        &:hover {
-          text-decoration: none;
-          color: $text_green;
+    .container {
+        &__header {
+            background-color: $text_green;
+            color: white;
+            padding-bottom: 1em;
+            width: 100%;
+            text-align: center;
         }
-      }
-      ol {
-        width: 100%;
-        padding-left: 0;
-        margin-top: 2em;
-        list-style: none;
 
-        .list-item {
-          counter-increment: item;
-          text-align: left;
-          font-size: 1.5em;
-          font-weight: 800;
-          background-color: lighten($text_green, 20%);
-          padding: 1em;
-          margin-bottom: .5em;
+        &__main {
+            text-align: center;
 
-          &:before {
-            content: counter(item)".";
-            margin-right: .5em;
-          }
+            .explanationText {
+                font-size: 1.2em;
+                margin-top: 1em;
+            }
+
+            .list_btn_next {
+                background-color: $text_green;
+                color: white;
+                text-decoration: none;
+                padding: 0.75em 1em;
+                width: 90%;
+                font-size: $font-default_btn_size;
+                border-radius: 1.5em;
+                border: 2px solid white;
+
+                &:hover {
+                    text-decoration: none;
+                    color: $text_green;
+                }
+            }
+
+            ol {
+                width: 100%;
+                padding-left: 0;
+                margin-top: 2em;
+                list-style: none;
+
+                .list-item {
+                    counter-increment: item;
+                    text-align: left;
+                    font-size: 1.5em;
+                    font-weight: 800;
+                    background-color: lighten($text_green, 20%);
+                    padding: 1em;
+                    margin-bottom: 0.5em;
+
+                    &:before {
+                        content: counter(item)".";
+                        margin-right: 0.5em;
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }

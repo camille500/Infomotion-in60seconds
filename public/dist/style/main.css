@@ -64,63 +64,59 @@
     text-decoration: none;
     color: white; }
 
-.stap-1__subText {
-  font-size: 1.3em;
-  margin: 1.25em 0 3.5em 0; }
-
-.stap-1__icon {
-  width: 9em;
-  margin-top: 2em;
-  margin-bottom: 1em; }
-
-.stap-1__partij_logo {
-  width: 95%;
-  text-align: center; }
-
-.stap-1__btn_green {
-  background-color: #2ecc71;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  padding: .75em 1em;
-  width: 90%;
-  font-size: 1.5em;
-  border-radius: 1.5em;
-  border: 2px solid white; }
-  .stap-1__btn_green:hover {
-    text-decoration: none;
-    color: #27ae60; }
-
-.stap-1__btn_red {
-  background-color: #e74c3c;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  padding: .75em 1em;
-  width: 90%;
-  font-size: 1.5em;
-  border-radius: 1.5em;
-  border: 2px solid white; }
-  .stap-1__btn_red:hover {
-    text-decoration: none;
-    color: #27ae60; }
-
-.stap-1 .partij_holder {
-  border: 1px grey solid;
-  padding: 1em;
-  min-height: 121px;
-  background-color: white; }
-
-.stap-1 .m-t-center {
-  margin-top: 1.25em; }
-
-.stap-1 #stap-1b {
-  display: none;
-  background-color: #8B60B4;
-  height: 700px; }
-  .stap-1 #stap-1b h1 {
+.stap-1 {
+  height: 670px;
+  color: white; }
+  .stap-1__subText {
+    font-size: 1.3em;
+    margin: 1.25em 0 3.5em 0; }
+  .stap-1__icon {
+    width: 9em;
+    margin-top: 2em;
+    margin-bottom: 1em; }
+  .stap-1__partij_logo {
+    width: 95%;
+    text-align: center; }
+  .stap-1__btn_green {
+    background-color: #2ecc71;
     color: white;
-    margin-bottom: .55em; }
+    text-align: center;
+    text-decoration: none;
+    padding: .75em 1em;
+    width: 90%;
+    font-size: 1.5em;
+    border-radius: 1.5em;
+    border: 2px solid white; }
+    .stap-1__btn_green:hover {
+      text-decoration: none;
+      color: #27ae60; }
+  .stap-1__btn_red {
+    background-color: #bdc3c7;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: .75em 1em;
+    width: 90%;
+    font-size: 1.5em;
+    border-radius: 1.5em;
+    border: 2px solid white; }
+    .stap-1__btn_red:hover {
+      text-decoration: none;
+      color: #27ae60; }
+  .stap-1 .partij_holder {
+    border: 1px grey solid;
+    padding: 1em;
+    min-height: 121px;
+    background-color: white; }
+  .stap-1 .m-t-center {
+    margin-top: 1.25em; }
+  .stap-1 #stap-1b {
+    display: none;
+    background-color: #8B60B4;
+    height: 700px; }
+    .stap-1 #stap-1b h1 {
+      color: white;
+      margin-bottom: .55em; }
 
 .stap-2__smallTitle {
   color: white;
@@ -175,7 +171,7 @@
       background-color: #3498db;
       color: white;
       text-decoration: none;
-      padding: .75em 1em;
+      padding: 0.75em 1em;
       width: 90%;
       font-size: 1.5em;
       border-radius: 1.5em;
@@ -195,12 +191,43 @@
         font-weight: 800;
         background-color: #8bc4ea;
         padding: 1em;
-        margin-bottom: .5em; }
+        margin-bottom: 0.5em; }
         .list__one .container__main ol .list-item:before {
           content: counter(item) ".";
-          margin-right: .5em; }
+          margin-right: 0.5em; }
+
+.transport_intro {
+  background-color: #e74c3c;
+  text-align: center;
+  height: 670px;
+  padding-top: 2.5em; }
+  .transport_intro .smallTitle {
+    color: white;
+    font-size: 2.25em;
+    margin-top: 0; }
+  .transport_intro .bigTitle {
+    font-size: 3em;
+    color: white;
+    margin-top: 0; }
+  .transport_intro .transportIcon {
+    width: 12em;
+    margin-top: 3.5em; }
+  .transport_intro .btn_transport {
+    background-color: #ecf0f1;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.75em 1em;
+    width: 90%;
+    font-size: 1.5em;
+    border-radius: 1.5em;
+    border: 2px solid white; }
+    .transport_intro .btn_transport:hover {
+      text-decoration: none;
+      color: white; }
 
 .list__two {
+  display: none;
   counter-reset: item; }
   .list__two .container__header {
     background-color: #e74c3c;
@@ -217,7 +244,7 @@
       background-color: #e74c3c;
       color: white;
       text-decoration: none;
-      padding: .75em 1em;
+      padding: 0.75em 1em;
       width: 90%;
       font-size: 1.5em;
       border-radius: 1.5em;
@@ -237,10 +264,10 @@
         font-weight: 800;
         background-color: #f29f97;
         padding: 1em;
-        margin-bottom: .5em; }
+        margin-bottom: 0.5em; }
         .list__two .container__main ol .list-item:before {
           content: counter(item) ".";
-          margin-right: .5em; }
+          margin-right: 0.5em; }
 
 .list__three {
   counter-reset: item; }
@@ -259,7 +286,7 @@
       background-color: #27ae60;
       color: white;
       text-decoration: none;
-      padding: .75em 1em;
+      padding: 0.75em 1em;
       width: 90%;
       font-size: 1.5em;
       border-radius: 1.5em;
@@ -279,10 +306,10 @@
         font-weight: 800;
         background-color: #60db94;
         padding: 1em;
-        margin-bottom: .5em; }
+        margin-bottom: 0.5em; }
         .list__three .container__main ol .list-item:before {
           content: counter(item) ".";
-          margin-right: .5em; }
+          margin-right: 0.5em; }
 
 .startpagina .container__main {
   background-color: #ffffff;
@@ -301,7 +328,7 @@
   padding-bottom: 1em; }
 
 .stap-1 .container__main {
-  background-color: #ffffff;
+  background-color: #8B60B4;
   height: 670px;
   text-align: center; }
 

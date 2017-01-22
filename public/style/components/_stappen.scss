@@ -1,7 +1,7 @@
 .stap-1 {
-    &__headerText {
+  height: 670px;
+  color: white;
 
-    }
     &__subText {
       font-size: 1.3em;
       margin: 1.25em 0 3.5em 0;
@@ -32,7 +32,7 @@
         }
     }
     &__btn_red {
-        background-color: $bg_red;
+        background-color: #bdc3c7;
         color: white;
         text-align: center;
         text-decoration: none;
