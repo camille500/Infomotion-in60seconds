@@ -94,16 +94,30 @@ function getScore() {
 }
 
 console.log(partijenLijst[numberOne]);
+localStorage.setItem('partijenLijst', partijenLijst);
+localStorage.setItem('partijenScore', partijenScore);
 localStorage.setItem('partij1', partijenLijst[numberOne]);
 window.location = ('/result/');
 }
 
 var voorkeurText = document.getElementById('voorkeurText');
 var partij1Text = document.getElementById('partij1Text');
+var scoreElement = document.getElementById('scoreElement');
 
 if(voorkeurText && partij1Text) {
+  var localPartijenLijst = localStorage.getItem('partijenLijst').split(',');
+  var localPartijenScore = localStorage.getItem('partijenScore').split(',');
+  console.log(localPartijenScore);
   voorkeurText.innerHTML = localStorage.getItem('voorkeursPartij');
   partij1Text.innerHTML = localStorage.getItem('partij1');
+  partijenScore.forEach(function(partij,i) {
+    console.log(i);
+    var scoreText = localPartijenLijst[i] + ": " + localPartijenScore[i];
+    var breakElement = document.createElement("br");
+    var scoreTextNode = document.createTextNode(scoreText);
+    scoreElement.appendChild(scoreTextNode);
+    scoreElement.appendChild(breakElement);
+  });
 }
 
 //getScore();
