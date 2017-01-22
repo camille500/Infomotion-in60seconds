@@ -319,7 +319,7 @@ $(function() {
 	$("#energy_items>li").dragdrop({
 		makeClone: true,
 		sourceHide: true,
-		dragClass: "shadow",
+		dragClass: "active_list-item_energy",
 		canDrag: function($src, event) {
 			$srcElement = $src;
 			srcIndex = $srcElement.index();
@@ -357,7 +357,7 @@ $(function() {
 	$("#transport_items>li").dragdrop({
 		makeClone: true,
 		sourceHide: true,
-		dragClass: "shadow",
+		dragClass: "active_list-item_transport",
 		canDrag: function($src, event) {
 			$srcElement = $src;
 			srcIndex = $srcElement.index();
@@ -395,7 +395,7 @@ $(function() {
 	$("#nature_items>li").dragdrop({
 		makeClone: true,
 		sourceHide: true,
-		dragClass: "shadow",
+		dragClass: "active_list-item_nature",
 		canDrag: function($src, event) {
 			$srcElement = $src;
 			srcIndex = $srcElement.index();

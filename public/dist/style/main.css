@@ -311,6 +311,33 @@
           content: counter(item) ".";
           margin-right: 0.5em; }
 
+.active_list-item_energy {
+  width: 92% !important;
+  height: auto !important;
+  padding: 1em !important;
+  background-color: #1d6fa5 !important;
+  color: white !important; }
+  .active_list-item_energy:before {
+    content: "?" !important; }
+
+.active_list-item_transport {
+  width: 92% !important;
+  height: auto !important;
+  padding: 1em !important;
+  background-color: #bf2718 !important;
+  color: white !important; }
+  .active_list-item_transport:before {
+    content: "?" !important; }
+
+.active_list-item_nature {
+  width: 92% !important;
+  height: auto !important;
+  padding: 1em !important;
+  background-color: #19703e !important;
+  color: white !important; }
+  .active_list-item_nature:before {
+    content: "?" !important; }
+
 .startpagina .container__main {
   background-color: #ffffff;
   height: 670px;

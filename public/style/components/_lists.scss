@@ -222,3 +222,39 @@
         }
     }
 }
+
+.active_list-item_energy {
+  width: 92%!important;
+  height: auto!important;
+  padding: 1em!important;
+  background-color: darken($bg_energie, 15%)!important;
+  color: white!important;
+
+  &:before {
+    content: "?"!important;
+  }
+}
+
+.active_list-item_transport {
+  width: 92%!important;
+  height: auto!important;
+  padding: 1em!important;
+  background-color: darken($bg_red, 15%)!important;
+  color: white!important;
+
+  &:before {
+    content: "?"!important;
+  }
+}
+
+.active_list-item_nature {
+  width: 92%!important;
+  height: auto!important;
+  padding: 1em!important;
+  background-color: darken($text_green, 15%)!important;
+  color: white!important;
+
+  &:before {
+    content: "?"!important;
+  }
+}
