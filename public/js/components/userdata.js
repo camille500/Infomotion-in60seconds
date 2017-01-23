@@ -10,67 +10,64 @@ var partijenScore = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 function getScore() {
   partijenData.forEach(function(d,i) {
     if(JSON.stringify(partijenData[i][0]) == JSON.stringify(userData[0][0])) {
-      partijenScore[i] += 100;
+      partijenScore[i] += 120;
     } else {
       if(JSON.stringify(partijenData[i][0][0]) == JSON.stringify(userData[0][0][0])) {
-        partijenScore[i] += 25;
+        partijenScore[i] += 40;
       }
       if(JSON.stringify(partijenData[i][0][1]) == JSON.stringify(userData[0][0][1])) {
-        partijenScore[i] += 25;
+        partijenScore[i] += 30;
       }
       if(JSON.stringify(partijenData[i][0][2]) == JSON.stringify(userData[0][0][2])) {
-        partijenScore[i] += 25;
+        partijenScore[i] += 20;
       }
       if(JSON.stringify(partijenData[i][0][3]) == JSON.stringify(userData[0][0][3])) {
-        partijenScore[i] += 25;
+        partijenScore[i] += 10;
       }
     }
     if(JSON.stringify(partijenData[i][1]) == JSON.stringify(userData[1][0])) {
-      partijenScore[i] += 100;
+      partijenScore[i] += 120;
     } else {
       if(JSON.stringify(partijenData[i][1][0]) == JSON.stringify(userData[1][0][0])) {
-        partijenScore[i] += 25;
+        partijenScore[i] += 40;
       }
       if(JSON.stringify(partijenData[i][1][1]) == JSON.stringify(userData[1][0][1])) {
-        partijenScore[i] += 25;
+        partijenScore[i] += 30;
       }
       if(JSON.stringify(partijenData[i][1][2]) == JSON.stringify(userData[1][0][2])) {
-        partijenScore[i] += 25;
+        partijenScore[i] += 20;
       }
       if(JSON.stringify(partijenData[i][1][3]) == JSON.stringify(userData[1][0][3])) {
-        partijenScore[i] += 25;
+        partijenScore[i] += 10;
       }
     }
     if(JSON.stringify(partijenData[i][2]) == JSON.stringify(userData[2][0])) {
-      partijenScore[i] += 100;
+      partijenScore[i] += 120;
     } else {
       if(JSON.stringify(partijenData[i][2][0]) == JSON.stringify(userData[2][0][0])) {
-        partijenScore[i] += 25;
+        partijenScore[i] += 40;
       }
       if(JSON.stringify(partijenData[i][2][1]) == JSON.stringify(userData[2][0][1])) {
-        partijenScore[i] += 25;
+        partijenScore[i] += 30;
       }
       if(JSON.stringify(partijenData[i][2][2]) == JSON.stringify(userData[2][0][2])) {
-        partijenScore[i] += 25;
+        partijenScore[i] += 20;
       }
       if(JSON.stringify(partijenData[i][2][3]) == JSON.stringify(userData[2][0][3])) {
-        partijenScore[i] += 25;
+        partijenScore[i] += 10;
       }
     }
     if(JSON.stringify(partijenData[i][3]) == JSON.stringify(userData[3][0])) {
-      partijenScore[i] += 100;
+      partijenScore[i] += 120;
     } else {
       if(JSON.stringify(partijenData[i][3][0]) == JSON.stringify(userData[3][0][0])) {
-        partijenScore[i] += 25;
+        partijenScore[i] += 60;
       }
       if(JSON.stringify(partijenData[i][3][1]) == JSON.stringify(userData[3][0][1])) {
-        partijenScore[i] += 25;
+        partijenScore[i] += 50;
       }
       if(JSON.stringify(partijenData[i][3][2]) == JSON.stringify(userData[3][0][2])) {
-        partijenScore[i] += 25;
-      }
-      if(JSON.stringify(partijenData[i][3][3]) == JSON.stringify(userData[3][0][3])) {
-        partijenScore[i] += 25;
+        partijenScore[i] += 30;
       }
     }
   });
