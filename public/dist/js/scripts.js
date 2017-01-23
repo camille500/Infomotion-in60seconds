@@ -432,6 +432,7 @@ var userData = [[localStorage.getItem('energie_stellingen').split(',')],
 var partijenLijst = ['50Plus', 'CDA', 'CU', 'D66', 'DENK', 'GeenPeil', 'Groenlinks', 'Piratenpartij', 'PvdA', 'PvDD', 'PVV', 'SGP', 'SP', 'VNL', 'VVD'];
 var partijenData = [vijftigplus, cda, cu, d66, denk, geenpeil, groenlinks, piratenpartij, pvda, pvdd, pvv, sgp, sp, vnl, vvd];
 var partijenScore = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+var partijenScore2 = partijenScore;
 
 function getScore() {
   partijenData.forEach(function(d,i) {
@@ -497,19 +498,24 @@ function getScore() {
       }
     }
   });
-  var numberOne = indexOfMax(partijenScore);
-   function indexOfMax(partijenScore) {
-    if (partijenScore.length === 0) {
+  localStorage.setItem('partijenScore', partijenScore);
+  var numberOne = indexOfMax(partijenScore2);
+  var numberTwo = indexOfMax(partijenScore2);
+  var numberThree = indexOfMax(partijenScore2);
+   function indexOfMax(partijenScore2) {
+    if (partijenScore2.length === 0) {
         return -1;
     }
 
-    var max = partijenScore[0];
+    var max = partijenScore2[0];
     var maxIndex = 0;
 
-    for (var i = 1; i < partijenScore.length; i++) {
-        if (partijenScore[i] > max) {
+    for (var i = 1; i < partijenScore2.length; i++) {
+        if (partijenScore2[i] > max) {
             maxIndex = i;
-            max = partijenScore[i];
+            max = partijenScore2[i];
+            delete partijenScore2[i];
+
         }
     }
 
@@ -518,13 +524,17 @@ function getScore() {
 
 console.log(partijenLijst[numberOne]);
 localStorage.setItem('partijenLijst', partijenLijst);
-localStorage.setItem('partijenScore', partijenScore);
+localStorage.setItem('partijenScore2', partijenScore2);
 localStorage.setItem('partij1', partijenLijst[numberOne]);
+localStorage.setItem('partij2', partijenLijst[numberTwo]);
+localStorage.setItem('partij3', partijenLijst[numberThree]);
 window.location = ('/result/');
 }
 
 var voorkeurText = document.getElementById('voorkeurText');
 var partij1Text = document.getElementById('partij1Text');
+var partij2Text = document.getElementById('partij2Text');
+var partij3Text = document.getElementById('partij3Text');
 var scoreElement = document.getElementById('scoreElement');
 
 if(voorkeurText && partij1Text) {
@@ -532,7 +542,9 @@ if(voorkeurText && partij1Text) {
   var localPartijenScore = localStorage.getItem('partijenScore').split(',');
   console.log(localPartijenScore);
   voorkeurText.innerHTML = localStorage.getItem('voorkeursPartij');
-  partij1Text.innerHTML = localStorage.getItem('partij1');
+  partij1Text.innerHTML = '<img width="100" src="../dist/images/partijen/' + localStorage.getItem('partij1').toLowerCase() + '.png" />';
+  partij2Text.innerHTML = '<img width="100" src="../dist/images/partijen/' + localStorage.getItem('partij2').toLowerCase() + '.png" />';
+  partij3Text.innerHTML = '<img width="100" src="../dist/images/partijen/' + localStorage.getItem('partij3').toLowerCase() + '.png" />';
   partijenScore.forEach(function(partij,i) {
     console.log(i);
     var scoreText = localPartijenLijst[i] + ": " + localPartijenScore[i];
