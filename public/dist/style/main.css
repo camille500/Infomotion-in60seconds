@@ -64,6 +64,9 @@
     text-decoration: none;
     color: white; }
 
+.bg_white {
+  background-color: white; }
+
 .stap-1 {
   height: 670px;
   color: white; }
@@ -338,6 +341,13 @@
   .active_list-item_nature:before {
     content: "?" !important; }
 
+.percentage {
+  position: relative;
+  top: .25em;
+  left: 1em;
+  font-size: 3.5em;
+  color: green; }
+
 .startpagina .container__main {
   background-color: #ffffff;
   height: 670px;
@@ -369,5 +379,17 @@
 
 .m-t-2 {
   margin-top: 2em; }
+
+.resultpage .container__main {
+  background-color: #8B60B4;
+  height: 670px;
+  text-align: center; }
+  .resultpage .container__main h1 {
+    color: white;
+    margin-bottom: .55em; }
+  .resultpage .container__main .well {
+    text-align: left;
+    min-height: 140px;
+    margin-bottom: .5em; }
 
 /*# sourceMappingURL=main.css.map */

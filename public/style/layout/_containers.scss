@@ -52,3 +52,24 @@
 .m-t-2 {
   margin-top: 2em;
 }
+
+.resultpage {
+    .container {
+        &__main {
+            background-color: $bg_primary;
+            height: 670px;
+            text-align: center;
+
+            h1 {
+              color: white;
+              margin-bottom: .55em;
+            }
+
+            .well {
+              text-align: left;
+              min-height: 140px;
+              margin-bottom: .5em;
+            }
+        }
+    }
+}

@@ -515,16 +515,21 @@ function getScore() {
             maxIndex = i;
             max = partijenScore2[i];
             delete partijenScore2[i];
-
         }
     }
 
     return maxIndex;
 }
 
-console.log(partijenLijst[numberOne]);
 localStorage.setItem('partijenLijst', partijenLijst);
 localStorage.setItem('partijenScore2', partijenScore2);
+var localPartijenScore = localStorage.getItem('partijenScore').split(',');
+var percentageOne = Math.floor(localPartijenScore[numberOne] / 360 * 100) + "%";
+var percentageTwo = Math.floor(localPartijenScore[numberTwo] / 360 * 100) + "%";
+var percentageThree = Math.floor(localPartijenScore[numberThree] / 360 * 100) + "%";
+localStorage.setItem('partij1Score', percentageOne);
+localStorage.setItem('partij2Score', percentageTwo);
+localStorage.setItem('partij3Score', percentageThree);
 localStorage.setItem('partij1', partijenLijst[numberOne]);
 localStorage.setItem('partij2', partijenLijst[numberTwo]);
 localStorage.setItem('partij3', partijenLijst[numberThree]);
@@ -535,27 +540,33 @@ var voorkeurText = document.getElementById('voorkeurText');
 var partij1Text = document.getElementById('partij1Text');
 var partij2Text = document.getElementById('partij2Text');
 var partij3Text = document.getElementById('partij3Text');
+var partij1Percentage = document.getElementById('partij1Percentage');
+var partij2Percentage = document.getElementById('partij2Percentage');
+var partij3Percentage = document.getElementById('partij3Percentage');
 var scoreElement = document.getElementById('scoreElement');
 
 if(voorkeurText && partij1Text) {
   var localPartijenLijst = localStorage.getItem('partijenLijst').split(',');
   var localPartijenScore = localStorage.getItem('partijenScore').split(',');
-  console.log(localPartijenScore);
   voorkeurText.innerHTML = localStorage.getItem('voorkeursPartij');
   partij1Text.innerHTML = '<img width="100" src="../dist/images/partijen/' + localStorage.getItem('partij1').toLowerCase() + '.png" />';
   partij2Text.innerHTML = '<img width="100" src="../dist/images/partijen/' + localStorage.getItem('partij2').toLowerCase() + '.png" />';
   partij3Text.innerHTML = '<img width="100" src="../dist/images/partijen/' + localStorage.getItem('partij3').toLowerCase() + '.png" />';
-  partijenScore.forEach(function(partij,i) {
-    console.log(i);
-    var scoreText = localPartijenLijst[i] + ": " + localPartijenScore[i];
-    var breakElement = document.createElement("br");
-    var scoreTextNode = document.createTextNode(scoreText);
-    scoreElement.appendChild(scoreTextNode);
-    scoreElement.appendChild(breakElement);
-  });
+  partij1Percentage.innerHTML = localStorage.getItem('partij1Score');
+  partij2Percentage.innerHTML = localStorage.getItem('partij2Score');
+  partij3Percentage.innerHTML = localStorage.getItem('partij3Score');
 }
 
-//getScore();
+
+
+// partijenScore.forEach(function(partij,i) {
+//   console.log(i);
+//   var scoreText = localPartijenLijst[i] + ": " + localPartijenScore[i];
+//   var breakElement = document.createElement("br");
+//   var scoreTextNode = document.createTextNode(scoreText);
+//   scoreElement.appendChild(scoreTextNode);
+//   scoreElement.appendChild(breakElement);
+// });
 
 var voorkeursPartij;
 

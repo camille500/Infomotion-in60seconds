@@ -1,14 +1,16 @@
 <%- include('../partials/main_header.ejs') %>
 
-<div class="startpagina">
+<div class="resultpage">
   <div class="container container__main">
 
-    <p class="m-t-2"><strong>Voorkeur: </strong><span id="voorkeurText"></span></p>
-    <p><strong>Beste match: </strong><span id="partij1Text"></span></p>
-    <p><strong>Tweede match: </strong><span id="partij2Text"></span></p>
-    <p><strong>Derde match: </strong><span id="partij3Text"></span></p>
+    <h1>Jouw matches</h1>
+
+    <div class="well bg_white"><span id="partij1Text"></span><span class="percentage" id="partij1Percentage"></span></div>
+    <div class="well bg_white"><span id="partij2Text"></span><span class="percentage" id="partij2Percentage"></span></div>
+    <div class="well bg_white"><span id="partij3Text"></span><span class="percentage" id="partij3Percentage"></span></div>
 
     <div id="scoreElement">
+    <p class="m-t-2"><strong>Voorkeur: </strong><span id="voorkeurText"></span></p>
 
     </div>
 
