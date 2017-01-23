@@ -1,0 +1,24 @@
+<%- include('../partials/main_header.ejs') %>
+
+<div class="list list__four">
+
+  <div class="container container__header">
+    <h1 class="list-1__headerText">Categorieën</h1>
+  </div>
+
+  <div id="list_statement" class="container container__main">
+
+    <p class="explanationText">Bepaal nu van de drie categorieën welke prioriteit deze moeten krijgen.</p>
+
+    <ol id="categories_items">
+      <li class="list-item">Energie</li>
+      <li class="list-item">Transport</li>
+      <li class="list-item">Natuur</li>
+    </ol><br /><br />
+
+    <a class="list_btn_next" onclick="getScore()" title="Ga door">Ga door</a>
+
+  </div>
+</div>
+
+<%- include('../partials/main_footer.ejs') %>

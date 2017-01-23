@@ -2,7 +2,7 @@ var userData = [
 	[localStorage.getItem('energie_stellingen').split(',')],
 	[localStorage.getItem('transport_stellingen').split(',')],
 	[localStorage.getItem('natuur_stellingen').split(',')],
-	['1', '2', '3']
+	[localStorage.getItem('categorie_indeling').split(',')]
 ];
 
 var checkIfEmpty = localStorage.getItem('natuur_stellingen');

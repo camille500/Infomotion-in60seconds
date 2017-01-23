@@ -29,5 +29,9 @@ router.get('/list-3', function(req, res) {
   res.render('start/list-3');
 });
 
+router.get('/list-4', function(req, res) {
+  res.render('start/list-4');
+});
+
 
 module.exports = router;

@@ -348,3 +348,41 @@ $(function() {
 		}
 	});
 });
+
+var currentOrder_categories = ['1', '2', '3'];
+
+$(function() {
+	var $srcElement;
+	var srcIndex, dstIndex;
+
+	$("#categories_items>li").dragdrop({
+		makeClone: true,
+		sourceHide: true,
+		dragClass: "active_list-item_categories",
+		canDrag: function($src, event) {
+			$srcElement = $src;
+			srcIndex = $srcElement.index();
+			dstIndex = srcIndex;
+			return $src;
+		},
+		canDrop: function($dst) {
+			if ($dst.is("li")) {
+				dstIndex = $dst.index();
+				if (srcIndex < dstIndex)
+					$srcElement.insertAfter($dst);
+				else
+					$srcElement.insertBefore($dst);
+			}
+			return true;
+		},
+		didDrop: function($src, $dst) {
+
+			if (srcIndex != dstIndex) {
+				var value = currentOrder_categories[srcIndex];
+				currentOrder_categories.splice(srcIndex, 1);
+				currentOrder_categories.splice(dstIndex, 0, value);
+        localStorage.setItem('categorie_indeling', currentOrder_categories);
+			}
+		}
+	});
+});

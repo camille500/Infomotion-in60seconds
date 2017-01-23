@@ -317,6 +317,48 @@
           content: counter(item) ".";
           margin-right: 0.5em; }
 
+.list__four {
+  counter-reset: item; }
+  .list__four .container__header {
+    background-color: #8B60B4;
+    color: white;
+    padding-bottom: 1em;
+    width: 100%;
+    text-align: center; }
+  .list__four .container__main {
+    text-align: center; }
+    .list__four .container__main .explanationText {
+      font-size: 1.2em;
+      margin-top: 1em; }
+    .list__four .container__main .list_btn_next {
+      background-color: #8B60B4;
+      color: white;
+      text-decoration: none;
+      padding: 0.75em 1em;
+      width: 90%;
+      font-size: 1.5em;
+      border-radius: 1.5em;
+      border: 2px solid white; }
+      .list__four .container__main .list_btn_next:hover {
+        text-decoration: none;
+        color: white; }
+    .list__four .container__main ol {
+      width: 100%;
+      padding-left: 0;
+      margin-top: 2em;
+      list-style: none; }
+      .list__four .container__main ol .list-item {
+        counter-increment: item;
+        text-align: left;
+        font-size: 1.5em;
+        font-weight: 800;
+        background-color: #bea5d5;
+        padding: 1em;
+        margin-bottom: 0.5em; }
+        .list__four .container__main ol .list-item:before {
+          content: counter(item) ".";
+          margin-right: 0.5em; }
+
 .active_list-item_energy {
   width: 92% !important;
   height: auto !important;
@@ -344,6 +386,15 @@
   .active_list-item_nature:before {
     content: "?" !important; }
 
+.active_list-item_categories {
+  width: 92% !important;
+  height: auto !important;
+  padding: 1em !important;
+  background-color: #654088 !important;
+  color: white !important; }
+  .active_list-item_categories:before {
+    content: "?" !important; }
+
 .percentage {
   position: relative;
   top: .25em;
@@ -353,12 +404,12 @@
 
 .startpagina .container__main {
   background-color: #ffffff;
-  height: 670px;
+  height: 700px;
   text-align: center; }
 
 .uitleg .container__main {
   background-color: #8B60B4;
-  height: 670px;
+  height: 700px;
   text-align: center; }
 
 .stap-1 .container__header {
@@ -369,7 +420,7 @@
 
 .stap-1 .container__main {
   background-color: #8B60B4;
-  height: 670px;
+  height: 700px;
   text-align: center; }
 
 .stap-1 .container .row__partijen {
@@ -377,7 +428,7 @@
 
 .stap-2 .container__main {
   background-color: #3498db;
-  height: 670px;
+  height: 700px;
   text-align: center; }
 
 .m-t-2 {
@@ -385,7 +436,7 @@
 
 .resultpage .container__main {
   background-color: #8B60B4;
-  height: 670px;
+  height: 700px;
   text-align: center; }
   .resultpage .container__main h1 {
     color: white;
