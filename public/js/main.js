@@ -25,7 +25,6 @@ function stapOneScreen() {
 
 function stapTwoScreen() {
   document.getElementById('stap-2a').style.display = 'none';
-  document.getElementById('voorkeursPartij').innerHTML = localStorage.getItem('voorkeursPartij');
   document.getElementById('stap-2b').style.display = 'block';
 }
 
