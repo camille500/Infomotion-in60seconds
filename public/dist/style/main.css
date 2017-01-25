@@ -75,7 +75,7 @@
   color: white; }
   .stap-1__subText {
     font-size: 1.3em;
-    margin: 1.25em 0 3.5em 0; }
+    margin: 1.25em 0 3.5em; }
   .stap-1__icon {
     width: 9em;
     margin-top: 2em;
@@ -88,7 +88,7 @@
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: .75em 1em;
+    padding: 0.75em 1em;
     width: 90%;
     font-size: 1.5em;
     border-radius: 1.5em;
@@ -101,7 +101,7 @@
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: .75em 1em;
+    padding: 0.75em 1em;
     width: 90%;
     font-size: 1.5em;
     border-radius: 1.5em;
@@ -122,7 +122,7 @@
     height: 700px; }
     .stap-1 #stap-1b h1 {
       color: white;
-      margin-bottom: .55em; }
+      margin-bottom: 0.55em; }
 
 .stap-2__smallTitle {
   color: white;
@@ -138,7 +138,7 @@
   color: white; }
 
 .stap-2__icon {
-  width: 14em;
+  width: 17em;
   margin-top: 4em; }
 
 .stap-2__btn_energy {
@@ -146,7 +146,7 @@
   color: white;
   text-align: center;
   text-decoration: none;
-  padding: .75em 1em;
+  padding: 0.75em 1em;
   width: 90%;
   font-size: 1.5em;
   border-radius: 1.5em;
@@ -159,6 +159,55 @@
   display: none;
   background-color: #8B60B4;
   height: 700px; }
+
+#stap-2a2 {
+  display: none; }
+  #stap-2a2 h1 {
+    color: white;
+    margin-top: 1em; }
+
+.phoneOnSide {
+  width: 23em;
+  margin-top: 6em;
+  margin-bottom: 8em; }
+
+#stap-3b {
+  display: none;
+  background-color: #e74c3c;
+  height: 700px; }
+  #stap-3b .stap-2__btn_energy {
+    background-color: #d84e48;
+    margin-left: 35%; }
+
+#stap-3a2 {
+  display: none;
+  background-color: #e74c3c;
+  text-align: center;
+  height: 720px; }
+  #stap-3a2 .stap-2__btn_energy {
+    background-color: #d84e48; }
+  #stap-3a2 h1 {
+    color: white;
+    margin-top: 1em; }
+
+#stap-4b {
+  display: none;
+  background-color: #27ae60;
+  height: 700px; }
+  #stap-4b .stap-2__btn_energy {
+    background-color: #68B054;
+    margin-left: 35%; }
+
+#stap-4a2 {
+  display: none;
+  background-color: #27ae60;
+  text-align: center;
+  height: 720px; }
+  #stap-4a2 .stap-2__btn_energy {
+    background-color: #68B054; }
+  #stap-4a2 h1 {
+    color: white;
+    margin-top: 1em; }
 
 .list__one {
   counter-reset: item; }
@@ -216,7 +265,7 @@
     color: white;
     margin-top: 0; }
   .transport_intro .transportIcon {
-    width: 12em;
+    width: 17em;
     margin-top: 4em; }
   .transport_intro .btn_transport {
     background-color: #d84e48;
@@ -229,6 +278,36 @@
     border-radius: 1.5em;
     border: 2px solid white; }
     .transport_intro .btn_transport:hover {
+      text-decoration: none;
+      color: white; }
+
+.natuur_intro {
+  background-color: #27ae60;
+  text-align: center;
+  height: 700px;
+  padding-top: 2.5em; }
+  .natuur_intro .smallTitle {
+    color: white;
+    font-size: 2.25em;
+    margin-top: 0; }
+  .natuur_intro .bigTitle {
+    font-size: 3em;
+    color: white;
+    margin-top: 0; }
+  .natuur_intro .natuurIcon {
+    width: 17em;
+    margin-top: 4em; }
+  .natuur_intro .btn_natuur {
+    background-color: #68B054;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.75em 1em;
+    width: 90%;
+    font-size: 1.5em;
+    border-radius: 1.5em;
+    border: 2px solid white; }
+    .natuur_intro .btn_natuur:hover {
       text-decoration: none;
       color: white; }
 
@@ -276,7 +355,8 @@
           margin-right: 0.5em; }
 
 .list__three {
-  counter-reset: item; }
+  counter-reset: item;
+  display: none; }
   .list__three .container__header {
     background-color: #27ae60;
     color: white;

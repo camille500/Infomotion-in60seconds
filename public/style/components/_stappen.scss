@@ -1,110 +1,191 @@
 .stap-1 {
-  height: 670px;
-  color: white;
+    height: 670px;
+    color: white;
 
     &__subText {
-      font-size: 1.3em;
-      margin: 1.25em 0 3.5em 0;
+        font-size: 1.3em;
+        margin: 1.25em 0 3.5em;
     }
+
     &__icon {
-      width: 9em;
-      margin-top: 2em;
-      margin-bottom: 1em;
+        width: 9em;
+        margin-top: 2em;
+        margin-bottom: 1em;
     }
+
     &__partij_logo {
-      width: 95%;
-      text-align: center;
+        width: 95%;
+        text-align: center;
     }
+
     &__btn_green {
         background-color: $bg_btn_default;
         color: white;
         text-align: center;
         text-decoration: none;
-        padding: .75em 1em;
+        padding: 0.75em 1em;
         width: 90%;
         font-size: $font-default_btn_size;
         border-radius: 1.5em;
         border: 2px solid white;
 
         &:hover {
-          text-decoration: none;
-          color: $text_green;
+            text-decoration: none;
+            color: $text_green;
         }
     }
+
     &__btn_red {
         background-color: #bdc3c7;
         color: white;
         text-align: center;
         text-decoration: none;
-        padding: .75em 1em;
+        padding: 0.75em 1em;
         width: 90%;
         font-size: $font-default_btn_size;
         border-radius: 1.5em;
         border: 2px solid white;
 
         &:hover {
-          text-decoration: none;
-          color: $text_green;
+            text-decoration: none;
+            color: $text_green;
         }
     }
-    .partij_holder {
-      border: 1px grey solid;
-      padding: 1em;
-      min-height: 121px;
-      background-color: white;
-    }
-    .m-t-center {
-      margin-top: 1.25em;
-    }
-    #stap-1b {
-      display: none;
-      background-color: $bg_primary;
-      height: 700px;
 
-      h1 {
-        color: white;
-        margin-bottom: .55em;
-      }
+    .partij_holder {
+        border: 1px grey solid;
+        padding: 1em;
+        min-height: 121px;
+        background-color: white;
+    }
+
+    .m-t-center {
+        margin-top: 1.25em;
+    }
+
+    #stap-1b {
+        display: none;
+        background-color: $bg_primary;
+        height: 700px;
+
+        h1 {
+            color: white;
+            margin-bottom: 0.55em;
+        }
     }
 }
 
 .stap-2 {
     &__smallTitle {
-      color: white;
-      font-size: 2.25em;
-      margin-top: 1.5em;
+        color: white;
+        font-size: 2.25em;
+        margin-top: 1.5em;
     }
+
     &__bigTitle {
-      font-size: 3em;
-      color: white;
+        font-size: 3em;
+        color: white;
     }
+
     &__tempText {
-      margin: 2em 0;
-      color: white;
+        margin: 2em 0;
+        color: white;
     }
+
     &__icon {
-      width: 14em;
-      margin-top: 4em;
+        width: 17em;
+        margin-top: 4em;
     }
+
     &__btn_energy {
         background-color: #2c94c8;
         color: white;
         text-align: center;
         text-decoration: none;
-        padding: .75em 1em;
+        padding: 0.75em 1em;
         width: 90%;
         font-size: $font-default_btn_size;
         border-radius: 1.5em;
         border: 2px solid white;
 
         &:hover {
-          text-decoration: none;
-          color: white;
+            text-decoration: none;
+            color: white;
         }
     }
+
     #stap-2b {
-      display: none;
-      background-color: $bg_primary;
-      height: 700px;
+        display: none;
+        background-color: $bg_primary;
+        height: 700px;
+    }
+}
+
+#stap-2a2 {
+    display: none;
+
+    h1 {
+        color: white;
+        margin-top: 1em;
+    }
+}
+
+.phoneOnSide {
+    width: 23em;
+    margin-top: 6em;
+    margin-bottom: 8em;
+}
+
+#stap-3b {
+    display: none;
+    background-color: $bg_red;
+    height: 700px;
+
+    .stap-2__btn_energy {
+        background-color: #d84e48;
+        margin-left: 35%;
+    }
+}
+
+#stap-3a2 {
+    display: none;
+    background-color: $bg_red;
+    text-align: center;
+    height: 720px;
+
+    .stap-2__btn_energy {
+        background-color: #d84e48;
+    }
+
+    h1 {
+        color: white;
+        margin-top: 1em;
+    }
+}
+
+#stap-4b {
+    display: none;
+    background-color: $text_green;
+    height: 700px;
+
+    .stap-2__btn_energy {
+        background-color: #68B054;
+        margin-left: 35%;
+    }
+}
+
+#stap-4a2 {
+    display: none;
+    background-color: $text_green;
+    text-align: center;
+    height: 720px;
+
+    .stap-2__btn_energy {
+        background-color: #68B054;
+    }
+
+    h1 {
+        color: white;
+        margin-top: 1em;
     }
 }

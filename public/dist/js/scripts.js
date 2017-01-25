@@ -647,14 +647,47 @@ function stapOneScreen() {
   document.getElementById('stap-1b').style.display = 'block';
 }
 
-function stapTwoScreen() {
+function stapTwo2Screen() {
   document.getElementById('stap-2a').style.display = 'none';
+  document.getElementById('stap-2a2').style.display = 'block';
+}
+
+
+function stapTwoScreen() {
+  document.getElementById('stap-2a2').style.display = 'none';
   document.getElementById('stap-2b').style.display = 'block';
+}
+
+function stapThree2Screen() {
+  document.getElementById('stap-3a2').style.display = 'none';
+  document.getElementById('stap-3b').style.display = 'block';
+}
+
+
+function stapThree3Screen() {
+  document.getElementById('stap-3b').style.display = 'none';
+  document.getElementById('list_two').style.display = 'block';
 }
 
 function stapThreeScreen() {
   document.getElementById('transport_introductie').style.display = 'none';
-  document.getElementById('list_two').style.display = 'block';
+  document.getElementById('stap-3a2').style.display = 'block';
+}
+
+function stapFour2Screen() {
+  document.getElementById('stap-4a2').style.display = 'none';
+  document.getElementById('stap-4b').style.display = 'block';
+}
+
+
+function stapFour3Screen() {
+  document.getElementById('stap-4b').style.display = 'none';
+  document.getElementById('list_three').style.display = 'block';
+}
+
+function stapFourScreen() {
+  document.getElementById('natuur_introductie').style.display = 'none';
+  document.getElementById('stap-4a2').style.display = 'block';
 }
 
 function setVoorkeurPartij(partij) {

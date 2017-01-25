@@ -78,12 +78,53 @@
     }
 
     .transportIcon {
-        width: 12em;
+        width: 17em;
         margin-top: 4em;
     }
 
     .btn_transport {
         background-color: #d84e48;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        padding: 0.75em 1em;
+        width: 90%;
+        font-size: $font-default_btn_size;
+        border-radius: 1.5em;
+        border: 2px solid white;
+
+        &:hover {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+.natuur_intro {
+    background-color: $text_green;
+    text-align: center;
+    height: 700px;
+    padding-top: 2.5em;
+
+    .smallTitle {
+        color: white;
+        font-size: 2.25em;
+        margin-top: 0;
+    }
+
+    .bigTitle {
+        font-size: 3em;
+        color: white;
+        margin-top: 0;
+    }
+
+    .natuurIcon {
+        width: 17em;
+        margin-top: 4em;
+    }
+
+    .btn_natuur {
+        background-color: #68B054;
         color: white;
         text-align: center;
         text-decoration: none;
@@ -164,6 +205,7 @@
 
 .list__three {
     counter-reset: item;
+    display: none;
 
     .container {
         &__header {
