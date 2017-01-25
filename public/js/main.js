@@ -66,6 +66,11 @@ function stapFourScreen() {
   document.getElementById('stap-4a2').style.display = 'block';
 }
 
+function showPhoto() {
+  document.getElementById('photo1').style.display = 'none';
+  document.getElementById('photo2').style.display = 'block';
+}
+
 function setVoorkeurPartij(partij) {
   voorkeursPartij = partij;
   localStorage.setItem('voorkeursPartij', partij);

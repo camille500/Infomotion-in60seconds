@@ -209,6 +209,15 @@
     color: white;
     margin-top: 1em; }
 
+.no-mg {
+  min-height: 20px !important;
+  border: 3px white solid;
+  margin-top: 1em;
+  overflow: hidden; }
+
+.bg_fb {
+  background-color: #3B5998; }
+
 .list__one {
   counter-reset: item; }
   .list__one .container__header {
@@ -482,6 +491,17 @@
   font-size: 3.5em;
   color: green; }
 
+.fullscreen-ps {
+  width: 27em; }
+
+#photo2 {
+  display: none; }
+
+.fb_text {
+  font-size: 1.8em;
+  text-align: center;
+  color: white; }
+
 .startpagina .container__main {
   background-color: #ffffff;
   height: 700px;
@@ -516,7 +536,7 @@
 
 .resultpage .container__main {
   background-color: #8B60B4;
-  height: 700px;
+  height: 780px;
   text-align: center; }
   .resultpage .container__main h1 {
     color: white;
